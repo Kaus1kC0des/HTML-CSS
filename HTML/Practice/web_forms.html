@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Customer Onboarding</title>
+</head>
+
+<body>
+    <h1>Welcome to movd.it</h1>
+    <p><b>Customer satisfaction is the tenet of our organisation.</b></p>
+    <br>
+    <p>Kindly fill in the details so we could help you get started.</p>
+    <br>
+    <form>
+        <label for="firstname">Enter your First Name: </label>
+        <input type="text" name="firstname" id="firstname" placeholder="required" required>
+
+        <br>
+
+        <label for="middlename">Enter your Middle Name:</label>
+        <input type="text" name="middlename" id="middlename" placeholder="optional">
+
+        <br>
+
+        <label for="lastname">Enter your Last Name: </label>
+        <input type="text" name="lastname" id="lastname" placeholder="required" required>
+
+        <br><br>
+
+        <label for="username">Choose your username: </label>
+        <input type="text" name="username" id="username" placeholder="Choose a unique username..." required>
+
+        <br>
+
+        <label for="password">Enter your password:</label>
+        <input type="password" name="password" id="password" placeholder="Enter a strong password: ">
+
+        <br>
+
+        <label for="security-question">Kindly choose a security question: </label>
+        <select name="security-question" id="security-question">
+            <option value="select">--SELECT--</option>
+            <option value="fav-color">What is your favourite color?</option>
+            <option value="fav=place">What is your favourite place/destination?</option>
+            <option value="pet-name">What is your first pet's name?</option>
+            <option value="spouse-met">Where did you first meet your spouse?</option>
+            <option value="schl-name">What is your first school's name?</option>
+        </select>
+
+        <br><br>
+
+        <label for="security-answer">Enter the answer for your security question: </label>
+        <input type="text" name="security-answer" id="security-answer">
+
+        <br><br>
+
+        <p><b>Tell us more about yourself!</b></p>
+
+        <br>
+
+        <label for="dad-husband-name">Enter your father/husband's name:</label>
+        <input type="text" name="dad-husband-name" id="dad-husband-name">
+
+        <br>
+
+        <label for="birthday">Enter your date of birth: </label>
+        <input type="date" name="birthday" id="birthday" form>
+        <br>
+        <label for="district">Enter your district name: </label>
+        <input type="text" name="district" id="district">
+
+        <br>
+
+        <label for="age">Enter your age: </label>
+        <input type="text" name="age" id="age">
+
+        <br>
+
+        <label for="gender">Select your gender: </label>
+        <br>
+        <input type="radio" name="gender" value="male" id="gen-male">
+        <label for="gen-male">Male</label>
+        <br>
+        <input type="radio" name="gender" value="female" id="gen-female">
+        <label for="gen-female">Female</label>
+        <br>
+        <input type="radio" name="gender" value="other" id="gen-other">
+        <label for="gen-other">Other</label>
+        <br>
+        <input type="radio" name="gen-p-nt-say" value="prefer-not-to-say">
+        <label for="gen-p-nt-say">Prefer not to say :) </label>
+        <br><br>
+
+        <label for="about">Tell us more about yourself</label>
+        <br>
+        <textarea name="about" id="about" cols="30" rows="20"
+            placeholder="Feel free to tell all you want..."></textarea>
+
+        <br><br>
+        <input type="submit" value="Submit the form.">
+</body>
+
+</html>
