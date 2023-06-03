@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>HTML Forms</title>
+</head>
+
+<body>
+    <h1>HTML Forms</h1>
+
+    <form>
+        <!-- id helps us identify this tag so that we can render it with CSS and make other changes
+             name helps the backend developer identify this tag and get the content of this form. -->
+        <!-- The label tag has a for attribute, which maps the input tag with the label tag -->
+        <label for="name">Enter the student's name: </label>
+        <input type="text" id="name" name="name">
+        <br><br>
+        <label for="email">Enter your Email Address: </label>
+        <input type="email" id="email" name="email">
+        <br>
+        <label for="password">Enter your password</label>
+        <input type="password" id="password" name="password">
+        <br><br>
+
+        <!-- The  radio buttons are used for single click options -->
+        <!-- The name tag here helps the HTML identify the corresponding field, for example male and female comes under 
+        gender, so that help HTML identify it and groups it -->
+        <p>Select your gender: </p>
+        <input type="radio" name="gender" value="male" id="gender-male">
+        <label for="gender-male">Male</label>
+        <br>
+        <input type="radio" name="gender" value="female" id="gender-female">
+        <label for="gender-female">Female</label>
+        <!-- Now if I change the name attribute of the female tag to gender2, I can select
+        hoth male and female at the same time, as they no longer belong to the same radio button group. -->
+        <br>
+        <input type="radio" name="gender" value="other" id="gender-other">
+        <label for="gender-other">Other</label>
+        <!-- THe value tag helps the server identify the value inputted by the user.
+        In the case of text input fields, the value is directly inputted by the user.
+        So the value tag helps the backend developer and server identify this value from this input field.-->
+
+        <br><br>
+
+        <!-- Now let us look into creating dropdowns -->
+        <label for="favourites-question"><b>Select your favourite thing in the college</b></label>
+        <select name="favourites" id="favourites-question">
+            <option value="q1">Favourite Teacher/Professor?</option>
+            <option value="q2">Favourite Food/Dish?</option>
+            <option value="q3">Favourite Subject?</option>
+            <option value="q4">Favourite Cultural/Technical Event?</option>
+        </select>
+        <br>
+        <label for="favourites-question-answer">Enter your Answer here</label>
+        <input type="password" id="favourites-question-answer">
+    </form>
+</body>
+
+</html>
